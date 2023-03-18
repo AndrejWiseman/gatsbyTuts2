@@ -1,5 +1,9 @@
-import * as React from "react"
+import React from "react"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <>
+      <h1>Nati je vredan! </h1>
+    </>
+  )
 }
