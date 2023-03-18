@@ -1,10 +1,13 @@
 import React from "react"
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <>
-      <p>Natasaaa</p>
-      <h4>Mudri</h4>
+      <Layout>
+        <h1>Natasino mesto za poeziju</h1>
+        <h2>Neke nove pesme!</h2>
+      </Layout>
     </>
   )
 }

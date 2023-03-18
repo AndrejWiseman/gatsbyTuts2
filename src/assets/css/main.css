@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: "Roboto";
+    --font2: "Open Sans Condensed";
+}
+
+h1 {
+    font-family: var(--font1);
+}

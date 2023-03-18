@@ -1,0 +1,109 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #333;
+
+    .hidden {
+        display: none;
+    }
+
+    .logo {
+        color: #eeeeee;
+    }
+
+    // .hamburger {
+        
+
+
+    // }
+
+    .menu-items {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        gap: 2rem;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color:aqua;
+
+                &:hover {
+                    color: #eeeeee;
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 500px) {
+        
+        padding: 0.7rem 1rem;
+        
+
+        .menu-items {
+            position: fixed;
+            right: -100%;
+            top: 0;
+            flex-direction: column;
+            width: 85vw;
+            height: 100vh;
+            background-color: #333;
+            transition: all 0.6s ease;
+            padding-top: 6rem;
+            
+
+            li {
+                border-bottom: 1px solid #eeeeee
+            }
+            
+        }
+
+        .active {
+            right: 0;
+
+            &.bar {
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(1) {
+                    transform: translateY(15px) rotate(45deg);
+                    background-color: aqua;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(1px) rotate(-45deg);
+                    background-color: aqua;
+                }
+            }
+        }
+
+        .hamburger {
+            display: block;
+            z-index: 999;
+
+            .bar {
+                width: 2.4rem;
+                height: 0.05rem;
+                background-color: white;
+                display: block;
+                margin: 6px 0;
+                transition: all 0.6s ease;
+            }
+
+        }
+
+    
+
+        
+    }
+    
+}
