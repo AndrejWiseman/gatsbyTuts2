@@ -7,6 +7,16 @@
 :root {
     --font1: "Roboto";
     --font2: "Open Sans Condensed";
+    --boja1: #5b96a9;
+    --boja2: #f6c7b3;
+    --boja3: #cde8e6;
+    --boja4: #f8dbb8;
+    --boja5: #e6f8f6;
+    --boja6: #f8f3e8;
+}
+
+body {
+    background-color: var(--boja6);
 }
 
 h1 {

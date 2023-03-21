@@ -4,14 +4,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    background-color: #333;
+    background-color: var(--boja1);
 
     .hidden {
         display: none;
     }
 
     .logo {
-        color: #eeeeee;
+        color: var(--boja2);
     }
 
     .menu-items {
@@ -23,7 +23,7 @@ nav {
 
             a {
                 text-decoration: none;
-                color:aqua;
+                color: var(--boja2);
 
                 &:hover {
                     color: #eeeeee;
@@ -44,7 +44,7 @@ nav {
             flex-direction: column;
             width: 85vw;
             height: 100vh;
-            background-color: #333;
+            background-color: var(--boja1);
             transition: all 0.6s ease;
             padding-top: 6rem;
             
