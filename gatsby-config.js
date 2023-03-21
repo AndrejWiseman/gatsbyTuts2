@@ -8,6 +8,14 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+
+  siteMetadata:{
+    title: "Nataša",
+    description: "Moja sajt za poeziju",
+    author: "@natasa"
+  },
+
+
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -21,11 +29,29 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
+        name: `pesme`,
+        // Path to the directory
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
         name: `images`,
         // Path to the directory
         path: `${__dirname}/src/assets/images`,
       },
     },
+
+
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-use-frontmatter-path'],
+      },
+    },
+
 
     {
       resolve: `gatsby-plugin-webfonts`,
