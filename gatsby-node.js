@@ -20,7 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
         actions.createPage({
           path: '/pesme/' + node.frontmatter.slug,
           component: path.resolve('./src/templates/pesma-template.js'),
-          contenxt: { slug: node.frontmatter.slug }
+          context: { slug: node.frontmatter.slug }
 
         })
     })

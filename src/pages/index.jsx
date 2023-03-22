@@ -17,7 +17,7 @@ export default function Home({ data }) {
   return (
     <Layout>
 
-      <h1>opo</h1>
+      <h1>Natasine pesme</h1>
 
       <div>
         {projects.map(project => (
