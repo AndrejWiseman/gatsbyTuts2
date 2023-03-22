@@ -18,6 +18,7 @@ export default function Home({ data }) {
     <Layout>
 
       <h1>Natasine pesme</h1>
+      <h2>I svasta</h2>
 
       <div>
         {projects.map(project => (
