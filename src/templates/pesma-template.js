@@ -7,6 +7,7 @@ export default function PesmaTemplate({ data }) {
 
     const { html } = data.markdownRemark
     const { title, datum } = data.markdownRemark.frontmatter
+    
 
     return (
         <Layout>
