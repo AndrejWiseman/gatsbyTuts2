@@ -9,7 +9,13 @@ export default function PesmaTemplate() {
 
     return (
         <Layout>
-            <h1>Template</h1>
+            <div>
+                <h2>naslov</h2>
+                <h3>autor</h3>
+
+                {/* <div dangerouslySetInnerHTML={} /> */}
+                
+            </div>
         </Layout>
     )
 }

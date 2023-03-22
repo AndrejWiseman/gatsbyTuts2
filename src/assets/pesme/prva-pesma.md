@@ -2,7 +2,7 @@
 title: "Prva pesma"
 datum: "21.4.2023."
 author: "Natasa"
-path: "/first-post"
+slug: "prva-pesma"
 ---
 
 Uskrsna zora rano sviće,
